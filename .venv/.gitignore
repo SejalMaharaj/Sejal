@@ -1,13 +1,19 @@
-# Ignore virtual environment
+# Ignore virtual environments
 .venv/
 venv/
 
-# Ignore Python cache files
+# Ignore Python cache
 __pycache__/
 *.pyc
+
+# Ignore IDE folders
+.idea/
+
+# Ignore database files
+*.db
 
 # Ignore system files
 .DS_Store
 
-# Ignore local files
+# Ignore local script you don't want
 home.py
