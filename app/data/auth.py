@@ -29,7 +29,7 @@ def register_user(username, password):
 
     hashed_password = hash_password(password)
 
-    with open("users.txt", "a") as f:
+    with open("../../DATA/users.txt", "a") as f:
         f.write(f"{username},{hashed_password}\n")
 
     print(f"User '{username}' registered successfully!")
@@ -37,11 +37,11 @@ def register_user(username, password):
 
 
 def login_user(username, password):
-    if not os.path.exists("users.txt"):
+    if not os.path.exists("../../DATA/users.txt"):
         print("No users registered yet.")
         return False
 
-    with open("users.txt", "r") as f:
+    with open("../../DATA/users.txt", "r") as f:
         for line in f:
             stored_user, stored_hash = line.strip().split(',', 1)
             if stored_user == username:
@@ -56,9 +56,9 @@ def login_user(username, password):
 
 
 def user_exists(username):
-    if not os.path.exists("users.txt"):
+    if not os.path.exists("../../DATA/users.txt"):
         return False
-    with open("users.txt", "r") as f:
+    with open("../../DATA/users.txt", "r") as f:
         for line in f:
             stored_user, _ = line.strip().split(',', 1)
             if stored_user == username:
