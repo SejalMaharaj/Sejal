@@ -1,0 +1,8 @@
+# Ignore everything by default
+*
+
+# Allow everything inside this CW2 folder
+!*/
+
+# Allow all files inside this folder
+!*.*

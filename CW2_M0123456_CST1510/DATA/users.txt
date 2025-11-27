@@ -1,2 +1,3 @@
-Sejal,$2b$12$yJS7MV/WzHpHyBMGdPlK3.E2MK99la0ZQS4kYzxx0lot0GrUzXa/S
-SEJAL,$2b$12$vfgnBJCIHC9B8eYi/mrqLez8EwJgxww1hJEX9m/vEh4bb1tRs96Xa
+Sejal,$2b$12$yJS7MV/WzHpHyBMGdPlK3.E2MK99la0ZQS4kYzxx0lot0GrUzXa/S,user
+SEJAL,$2b$12$vfgnBJCIHC9B8eYi/mrqLez8EwJgxww1hJEX9m/vEh4bb1tRs96Xa,user
+Astro,$2b$12$BKm7WGWYaw/FS/zVdLMA8ejoIcdrGAmBvj18ref8VuVVbX2KyfJK6,admin
