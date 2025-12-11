@@ -103,3 +103,9 @@ if st.button("Log Out"):
     st.session_state.role = None
     st.info("You have been logged out.")
     st.switch_page("home.py")
+import streamlit as st
+
+st.title("Questions?")
+
+if st.button("Open AI Assistant"):
+    st.switch_page("pages/AI_assistant.py")

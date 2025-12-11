@@ -1,4 +1,7 @@
 # load_data.py
+from database.db import connect_database
+
+
 from db import connect_database, load_csv_to_table
 from pathlib import Path
 

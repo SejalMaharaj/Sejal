@@ -1,8 +1,24 @@
 # app/data/users.py
 import sqlite3
 
+
+class User:
+    """
+    Simple domain model for a user.
+    Used by the service layer and UI,
+    separate from raw database tuples.
+    """
+    def __init__(self, username: str, role: str, email: str | None = None):
+        self.username = username
+        self.role = role
+        self.email = email
+
+    def is_admin(self) -> bool:
+        return self.role.lower() == "admin"
+
+
 def create_users_table(conn):
-    """Create users table if it doesn't exist."""
+    """Create users table if it does not exist."""
     cursor = conn.cursor()
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS users (

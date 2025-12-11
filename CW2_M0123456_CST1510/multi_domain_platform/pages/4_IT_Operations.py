@@ -116,3 +116,10 @@ st.subheader("📄 Filtered Ticket Records")
 st.dataframe(filtered_df, use_container_width=True)
 
 st.info("This dashboard helps IT Operations identify bottlenecks, slow staff, and urgent priorities.")
+
+import streamlit as st
+
+st.title("Questions?")
+
+if st.button("Open AI Assistant"):
+    st.switch_page("pages/AI_assistant.py")

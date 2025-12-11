@@ -1,7 +1,7 @@
 # main.py
 
 import pandas as pd
-from app.data.db import connect_database, DB_PATH
+from CW2_M0123456_CST1510.multi_domain_platform.database.db import connect_database, DB_PATH
 from app.data.schema import create_all_tables
 from app.services.user_service import register_user, login_user, migrate_users_from_file
 from app.data.incidents import insert_incident, get_all_incidents, update_incident_status, delete_incident

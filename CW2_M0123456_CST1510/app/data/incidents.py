@@ -1,4 +1,6 @@
 # app/data/incidents.py
+
+
 import pandas as pd
 
 def create_cyber_incidents_table(conn):

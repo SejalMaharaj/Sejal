@@ -3,6 +3,7 @@
 import pandas as pd
 from app.data.db import connect_database
 
+
 def create_it_tickets_table(conn):
     """Create it_tickets table if it doesn't exist."""
     cursor = conn.cursor()

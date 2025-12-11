@@ -2,6 +2,29 @@
 import sqlite3
 from pathlib import Path
 import pandas as pd
+# multi_domain_platform/database/db.py
+# multi_domain_platform/database/db.py
+from pathlib import Path
+import sqlite3
+
+# Base folder = multi_domain_platform/
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Database folder = multi_domain_platform/database/
+DB_DIR = BASE_DIR / "database"
+DB_DIR.mkdir(exist_ok=True)
+
+# Database file
+DB_PATH = DB_DIR / "intelligence_platform.db"
+
+
+def connect_database(db_path: Path = DB_PATH) -> sqlite3.Connection:
+    """
+    Connect to the SQLite database.
+    Creates the database file if it does not exist.
+    """
+    return sqlite3.connect(db_path)
+
 
 # Database file path
 DATA_DIR = Path("DATA")
