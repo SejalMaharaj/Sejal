@@ -10,3 +10,8 @@
 # Ignore the .env file inside the CW2 folder
 CW2_M0123456_CST1510/.env
 
+# Ignore Streamlit secrets (global)
+.streamlit/secrets.toml
+
+# Ignore Streamlit secrets inside the multi-domain platform
+multi_domain_platform/.streamlit/secrets.toml
